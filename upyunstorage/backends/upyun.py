@@ -35,7 +35,7 @@ from django.core.exceptions import ImproperlyConfigured
 from upyunstorage.lib.upyun import UpYun, UpYunException
 
 BUCKET_NAME = getattr(settings, 'UPYUN_BUCKET_NAME', None)
-BUCKET_URL = getattr(settings, 'UPYUN_BUCKET_URL', 'http://%s.b0.upaiyun.com' % BUCKET_NAME)
+BUCKET_URL = getattr(settings, 'UPYUN_BUCKET_URL', '//%s.b0.upaiyun.com' % BUCKET_NAME)
 OPERATOR_NAME = getattr(settings, 'UPYUN_OPERATOR_NAME', None)
 OPERATOR_PASSWORD = getattr(settings, 'UPYUN_OPERATOR_PASSWORD', None)
 
